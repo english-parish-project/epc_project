@@ -30,6 +30,7 @@ group :development, :test do
   gem 'rspec-collection_matchers'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
+  gem 'kaminari'
 end
 
 group :development do

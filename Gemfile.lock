@@ -249,6 +249,7 @@ DEPENDENCIES
   haml
   jbuilder (~> 2.0)
   jquery-rails
+  kaminari
   paperclip
   pg
   pry-rails
