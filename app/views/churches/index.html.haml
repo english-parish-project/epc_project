@@ -1,6 +1,9 @@
 - if @churches.any?
   - @churches.each do |church|
     %p= church.name
+    %p= church.date_first_mention_in_text
+    %p= church.location.town
+    %p= church.location.county
 - else 
   No churches have been added yet!
 

@@ -10,7 +10,7 @@ class ChurchesController < ApplicationController
   
   def create
     @church = Church.create(church_params)
-    redirect_to root_path
+    redirect_to new_church_location_path(@church.id)
   end
   
   def church_params
