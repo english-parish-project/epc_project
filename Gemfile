@@ -11,6 +11,10 @@ gem 'rails_admin'
 gem 'devise'
 gem 'haml'
 gem 'paperclip'
+gem 'simple_form'
+gem "therubyracer"
+gem 'bootstrap-sass'
+gem "twitter-bootstrap-rails"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -31,6 +35,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'kaminari'
+  gem 'launchy'
 end
 
 group :development do
@@ -38,5 +43,6 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'pry-rails'
+  gem 'pry'
 end
 

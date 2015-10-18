@@ -1,3 +1,7 @@
-No churches have been added yet!
+- if @churches.any?
+  - @churches.each do |church|
+    %p= church.name
+- else 
+  No churches have been added yet!
 
-%a(href='#') Add A Church
+=link_to  "Add A Church", new_church_path
