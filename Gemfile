@@ -15,6 +15,7 @@ gem 'simple_form'
 gem "therubyracer"
 gem 'bootstrap-sass'
 gem "twitter-bootstrap-rails"
+gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

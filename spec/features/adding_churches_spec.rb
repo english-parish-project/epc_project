@@ -34,7 +34,7 @@ feature 'adding churches' do
       fill_in "Town", with: "Town"
       select "Suffolk", :from => "Buildings of england volume"
       select "Suffolk", :from => "County"
-      select "Norwich", :from => "Diocese"
+      select "Chester", :from => "Diocese"
       fill_in "Archdeaconry", with: "York"
       fill_in "Longitude", with: "50.1"
       fill_in "Latitude", with: "50.2"
