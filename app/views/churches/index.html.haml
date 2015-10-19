@@ -4,7 +4,11 @@
     %p= church.date_first_mention_in_text
     %p= church.location.town
     %p= church.location.county
-    %p= link_to "Add Images", new_church_image_path(church)
+    - if church.building_images.any? 
+      - church.building_images.each do |image|
+        %p= image.description
+        = image_tag image.church_images[0].url
+    %p= link_to "Add Images", new_church_building_image_path(church)
 - else 
   No churches have been added yet!
 

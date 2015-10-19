@@ -11,10 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151018173739) do
+ActiveRecord::Schema.define(version: 20151019131957) do
 
   # These are extensions that must be enabled in order to support this database
+  
   enable_extension "plpgsql"
+
+  create_table "building_images", force: :cascade do |t|
+    t.string   "description"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.json     "church_images"
+    t.integer  "church_id"
+  end
+
+  add_index "building_images", ["church_id"], name: "index_building_images_on_church_id", using: :btree
 
   create_table "churches", force: :cascade do |t|
     t.text     "name"
@@ -43,4 +54,5 @@ ActiveRecord::Schema.define(version: 20151018173739) do
 
   add_index "locations", ["church_id"], name: "index_locations_on_church_id", using: :btree
 
+  add_foreign_key "building_images", "churches"
 end

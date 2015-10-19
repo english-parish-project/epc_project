@@ -1,0 +1,6 @@
+.container
+  .col-xs-12
+    = simple_form_for [@church, @building_image] do |f|
+      = f.input :description
+      = f.file_field :church_images, multiple: true 
+      = f.button :submit, "Add Images"
