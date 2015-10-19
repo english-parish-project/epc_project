@@ -2,9 +2,9 @@
   .col-xs-12
     = simple_form_for [@church, @location] do |f|
       = f.input :town
-      = f.input :buildings_of_england_volume, collection: ["Suffolk"], prompt: "Select Buildings of England Volume"
-      = f.input :county, collection: ["Suffolk", "Other"], prompt: "Select County"
-      = f.input :diocese, collection: ["Norwich", "Other"], prompt: "Select Diocese"
+      = f.input :buildings_of_england_volume, collection: @volume_options, prompt: "Select Buildings of England Volume"
+      = f.input :county, collection: @county_options, prompt: "Select County"
+      = f.input :diocese, collection: @dioceses_options, prompt: "Select Diocese"
       = f.input :archdeaconry
       = f.input :latitude
       = f.input :longitude

@@ -10,7 +10,7 @@ feature 'adding churches' do
   end
   
   context 'creating church with needed information' do
-    scenario 'prompts user to fill out a form' do
+    scenario 'prompts user to fill out intital church information' do
      visit root_path
      click_link 'Add A Church'
      fill_in 'Name', with: 'Church 1'
@@ -28,8 +28,8 @@ feature 'adding churches' do
   end
   
   context 'adding location to church' do    
-    scenario do
-      add_church
+    scenario 'prompts user to fill out church location information' do
+      add_inital_church_information
       click_button 'Next - Add Location'
       fill_in "Town", with: "Town"
       select "Suffolk", :from => "Buildings of england volume"

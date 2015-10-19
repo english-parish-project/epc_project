@@ -5,6 +5,7 @@ class ChurchesController < ApplicationController
   end  
   
   def new
+    @date_ranges = ChurchesHelper.date_ranges
     @church = Church.new
   end
   

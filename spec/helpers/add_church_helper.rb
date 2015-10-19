@@ -1,4 +1,4 @@
-def add_church
+def add_inital_church_information
   visit root_path
   click_link 'Add A Church'
   fill_in 'Name', with: 'Church 1'

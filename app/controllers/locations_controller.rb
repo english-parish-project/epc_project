@@ -2,6 +2,9 @@ class LocationsController < ApplicationController
   def new
     @church = Church.find(params[:church_id])
     @location = Location.new
+    @dioceses_options = LocationsHelper.dioceses_options
+    @county_options = LocationsHelper.english_county_options
+    @volume_options = LocationsHelper.buildings_of_england_volume_options
   end
   
   def create

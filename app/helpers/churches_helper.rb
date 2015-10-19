@@ -1,5 +1,5 @@
 module ChurchesHelper
-  def date_ranges
+  def self.date_ranges
     ["Before 700",
     "700-725",
     "726-750",
