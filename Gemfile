@@ -19,7 +19,7 @@ gem 'bootstrap-sass'
 gem "twitter-bootstrap-rails"
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 gem 'mini_magick'
-gem "puma"
+gem 'puma'
 gem 'rails_12factor', group: :production
 
 # Use ActiveModel has_secure_password
