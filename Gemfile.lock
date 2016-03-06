@@ -297,7 +297,6 @@ DEPENDENCIES
   mini_magick
   paperclip
   pg
-  pry
   pry-rails
   puma
   rails (= 4.2.4)

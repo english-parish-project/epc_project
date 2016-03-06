@@ -43,6 +43,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'kaminari'
   gem 'launchy'
+  # gem 'pry'
 end
 
 group :development do
@@ -50,6 +51,5 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'pry-rails'
-  gem 'pry'
 end
 
